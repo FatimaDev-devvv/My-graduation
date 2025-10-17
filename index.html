@@ -3,50 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Convite de Formatura - Fatima Olimpio</title>
+  <title>Convite de Formatura - Fátima Olímpio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
-      background-color: #0a0f2c;
-      color: white;
+      background-color: #ffffff; /* fundo neutro */
+      color: #0a0f2c; /* texto azul escuro */
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      padding: 20px;
     }
 
     .card {
-      background-color: #ffffff;
+      background-color: #f0f4fa; /* branco azulado */
       color: #0a0f2c;
-      padding: 40px 30px;
+      padding: 35px 25px;
       border-radius: 16px;
-      max-width: 500px;
-      width: 90%;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
       text-align: center;
-      border: 3px solid #d4af37;
+      border: 2px solid #d4af37; /* dourado */
     }
 
     h1 {
       font-size: 28px;
       margin-bottom: 10px;
-      color: #d4af37;
-      letter-spacing: 1px;
+      color: #0a0f2c;
     }
 
     .divider {
       width: 60px;
       height: 3px;
       background-color: #d4af37;
-      margin: 16px auto;
+      margin: 16px auto 24px;
+      border-radius: 2px;
+    }
+
+    .icon {
+      font-size: 48px;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      font-style: italic;
+      color: #0a0f2c;
     }
 
     .details {
       font-size: 17px;
       line-height: 1.7;
-      margin-top: 20px;
+      margin-bottom: 30px;
     }
 
     .highlight {
@@ -54,58 +73,88 @@
       font-weight: bold;
     }
 
-    .footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #555;
-    }
-
     .whatsapp-button {
       display: inline-block;
-      margin-top: 25px;
-      padding: 12px 24px;
+      padding: 14px 28px;
       background-color: #d4af37;
       color: #0a0f2c;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
+      font-size: 17px;
       transition: background 0.3s ease;
     }
 
     .whatsapp-button:hover {
-      background-color: #c09c30;
+      background-color: #c7a631;
     }
 
-    @media (max-width: 500px) {
+    .footer {
+      margin-top: 28px;
+      font-size: 15px;
+      color: #666;
+      font-style: italic;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 0;
+      }
+
       .card {
-        padding: 30px 20px;
+        border-radius: 0;
+        height: 100vh;
+        border: none;
+        border-bottom: 4px solid #d4af37;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .message,
+      .details {
+        font-size: 16px;
+      }
+
+      .whatsapp-button {
+        font-size: 16px;
+        padding: 12px 20px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Convite Especial</h1>
+  <div class="card" role="main" aria-label="Convite para graduação da Fátima Olímpio">
+    <div class="icon">🎓</div> <!-- Ícone de chapéu de graduação -->
+    <h1>Graduação da FÁTIMA OLÍMPIO</h1>
     <div class="divider"></div>
+
+    <p class="message">
+      Um ciclo se completa e devemos comemorar!
+      Por você ter sido especial na minha caminhada profissional, 
+      você está convidado(a) para celebrar comigo e minha família essa grande conquista.
+    </p>
+
     <p class="details">
-      Você é nosso(a) convidado(a) para celebrar a<br />
-      <span class="highlight">Festa de Formatura</span><br /><br />
-      Em homenagem a<br />
-      <span class="highlight">Fatima Olimpio</span> 🎓<br /><br />
-      <span class="highlight">📍 Local:</span> Salão de Festas Jardim Azul<br />
-      <span class="highlight">📅 Data:</span> 25 de Novembro de 2025<br />
-      <span class="highlight">🕗 Horário:</span> 19h00<br /><br />
-      Sua presença tornará este momento ainda mais especial.
+      <span class="highlight">📍 Local:</span> Matendene, paragem Estaleiro<br />
+      <span class="highlight">📅 Data:</span> 06 de Dezembro de 2025<br />
+      <span class="highlight">🕗 Horário:</span> 14h00<br />
     </p>
 
     <a 
       href="https://wa.me/258870490542?text=Olá%2C%20Fatima!%20Confirmo%20minha%20presença%20na%20sua%20festa%20de%20formatura%20🎓." 
       target="_blank" 
+      rel="noopener noreferrer"
       class="whatsapp-button">
-      Confirmar Presença via WhatsApp
+      Clique aqui para confirmar sua presença!
     </a>
 
-    <p class="footer">Aguardamos você com alegria 💛</p>
+    <p class="footer">Aguardamos você com carinho 💛</p>
   </div>
 </body>
 </html>
