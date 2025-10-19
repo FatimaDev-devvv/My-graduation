@@ -13,8 +13,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
-      background-color: #ffffff; /* fundo neutro */
-      color: #0a0f2c; /* texto azul escuro */
+      background-color: #ffffff; /* fundo branco puro */
+      color: #0a1a3d; /* azul escuro elegante */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -23,76 +23,80 @@
     }
 
     .card {
-      background-color: rgb(129, 170, 233); /* branco azulado */
-      color: #0a0f2c;
-      padding: 35px 25px;
-      border-radius: 16px;
+      background-color: #eaf2ff; /* branco azulado no cartão */
+      color: #0a1a3d;
+      padding: 40px 30px;
+      border-radius: 18px;
       max-width: 520px;
       width: 100%;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 20px rgba(10, 26, 61, 0.15);
       text-align: center;
-      border: 2px solid #d4af37; /* dourado */
+      border: 2px solid #0a1a3d; /* contorno azul escuro */
     }
 
     h1 {
       font-size: 28px;
       margin-bottom: 10px;
-      color: #0a0f2c;
+      color: #0a1a3d;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
 
     .divider {
       width: 60px;
       height: 3px;
-      background-color: #d4af37;
+      background-color: #0a1a3d;
       margin: 16px auto 24px;
       border-radius: 2px;
     }
 
     .icon {
       font-size: 48px;
-      color: #d4af37;
+      color: #0a1a3d;
       margin-bottom: 10px;
     }
 
     .message {
       font-size: 17px;
-      line-height: 1.6;
+      line-height: 1.7;
       margin-bottom: 30px;
       font-style: italic;
-      color: #0a0f2c;
+      color: #0a1a3d;
     }
 
     .details {
       font-size: 17px;
-      line-height: 1.7;
-      margin-bottom: 30px;
+      line-height: 1.8;
+      margin-bottom: 35px;
     }
 
     .highlight {
-      color: #d4af37;
+      color: #0044cc; /* azul vivo para detalhes */
       font-weight: bold;
     }
 
     .whatsapp-button {
       display: inline-block;
       padding: 14px 28px;
-      background-color: #f0d069;
-      color: #0a0f2c;
+      background-color: #0044cc;
+      color: #ffffff;
       text-decoration: none;
       border-radius: 10px;
       font-weight: bold;
       font-size: 17px;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 68, 204, 0.3);
     }
 
     .whatsapp-button:hover {
-      background-color: #c7a631;
+      background-color: #002b80;
+      transform: scale(1.03);
     }
 
     .footer {
       margin-top: 28px;
       font-size: 15px;
-      color: #666;
+      color: #0a1a3d;
       font-style: italic;
     }
 
@@ -105,7 +109,7 @@
         border-radius: 0;
         height: 100vh;
         border: none;
-        border-bottom: 4px solid #d4af37;
+        border-bottom: 4px solid #0044cc;
         box-shadow: none;
         display: flex;
         flex-direction: column;
@@ -130,14 +134,14 @@
 </head>
 <body>
   <div class="card" role="main" aria-label="Convite para graduação da Fátima Olímpio">
-    <div class="icon">🎓</div> <!-- Ícone de chapéu de graduação -->
+    <div class="icon">🎓</div>
     <h1>Graduação da FÁTIMA OLÍMPIO</h1>
     <div class="divider"></div>
 
     <p class="message">
-      Um ciclo se completa e devemos comemorar!
+      Um ciclo se completa e devemos comemorar!<br>
       Por você ter sido especial na minha caminhada profissional, 
-      você está convidado(a) para celebrar comigo e minha família essa grande conquista.
+      está convidado(a) para celebrar comigo e minha família essa grande conquista.
     </p>
 
     <p class="details">
@@ -151,10 +155,10 @@
       target="_blank" 
       rel="noopener noreferrer"
       class="whatsapp-button">
-      Clique aqui, apenas para confirmar sua presença!
+      Clique aqui, apenas para Confirmar a tua presença! 💙
     </a>
 
-    <p class="footer">Aguardamos você com carinho 💛</p>
+    <p class="footer">Aguardamos você com carinho 💙🤍🖤</p>
   </div>
 </body>
 </html>
